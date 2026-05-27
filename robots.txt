@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jkflorez95-sena.github.io/testimonio-rocio-moreno/sitemap.xml
