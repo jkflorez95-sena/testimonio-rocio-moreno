@@ -195,8 +195,8 @@
             <p>Si esta historia te tocó, si has vivido algo similar o quieres dejar un mensaje de apoyo, puedes escribirlo aquí. Los comentarios serán recibidos para su revisión.</p>
             <p class="form-success" id="form-success" hidden>Gracias. Tu comentario fue recibido y será revisado.</p>
 
-            <form id="comment-form" name="comentarios" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="https://formspree.io/f/REEMPLAZAR_ID">
-              <input type="hidden" name="form-name" value="comentarios">
+            <form id="comment-form" name="comentarios" method="POST" action="https://formspree.io/f/xbdbpqpe">
+              <input type="hidden" name="_subject" value="Nuevo comentario del blog de Rocío">
               <p class="hidden-field">
                 <label>No llenar este campo: <input name="bot-field"></label>
               </p>
@@ -238,11 +238,15 @@
           }
 
           try {
-            await fetch('/', {
+            const response = await fetch(form.action, {
               method: 'POST',
-              headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-              body: new URLSearchParams(formData).toString()
+              headers: { 'Accept': 'application/json' },
+              body: formData
             });
+
+            if (!response.ok) {
+              throw new Error('Formspree rejected the submission');
+            }
 
             form.reset();
             message.hidden = false;
