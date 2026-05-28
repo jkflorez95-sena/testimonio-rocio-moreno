@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" role="img" aria-labelledby="title desc">
+  <title id="title">Relatos de Pacientes</title>
+  <desc id="desc">Logo con burbuja de diálogo, hoja de testimonio y línea vital.</desc>
+  <defs>
+    <linearGradient id="markGradient" x1="24" y1="18" x2="88" y2="82" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b7d78"/>
+      <stop offset="1" stop-color="#1d4768"/>
+    </linearGradient>
+  </defs>
+
+  <g fill="none" fill-rule="evenodd">
+    <path
+      d="M48 14h34c15.5 0 28 12.5 28 28v10c0 15.5-12.5 28-28 28H61.5L42.8 91.2c-2.6 1.6-5.8-.8-5-3.8L41.2 78C29.4 74.8 20 64 20 52V42c0-15.5 12.5-28 28-28Z"
+      fill="url(#markGradient)"
+    />
+    <path
+      d="M58 28h26l10 10v28H58V28Z"
+      fill="#fffdf9"
+      opacity=".97"
+    />
+    <path d="M84 28v10h10" stroke="#c58b2d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path
+      d="M40 54h13l6-12 9 24 8-17h18"
+      stroke="#c58b2d"
+      stroke-width="5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path d="M64 43h12M64 54h8M64 64h18" stroke="#0b7d78" stroke-width="3" stroke-linecap="round"/>
+
+    <text x="128" y="43" fill="#5b2434" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700">
+      Relatos
+    </text>
+    <text x="128" y="68" fill="#075d5b" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="1.8">
+      DE PACIENTES
+    </text>
+  </g>
+</svg>
